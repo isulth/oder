@@ -1,0 +1,149 @@
+@media screen and (max-width: 768px) {
+    .page-title {
+        font-size: 40px;
+        padding: 30px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .text-box {
+        padding: 10px;
+        height: auto;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .grid-item {
+        margin: 10px 0;
+    }
+
+    .image, .text-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: system-ui;
+}
+
+.parallax {
+    height: 100vh; /* Set the height of the parallax section */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; /* Ensure proper positioning of elements within */
+}
+
+.page-title {
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url(images/1.jpeg.jpeg);
+    text-align: center;
+    color: rgb(252, 245, 245);
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 60px;
+    font-family: fantasy;
+    letter-spacing: 10px;
+    position: relative; 
+    z-index: 1;
+}
+header:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+    
+
+header {
+    padding-top: 20px; /* Add padding to the top of the header */
+    position: relative; /* Ensure proper stacking of elements */
+    z-index: 1000; /* Set a high z-index to bring the header above other content */
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Center the navigation items horizontally */
+}
+
+header nav ul li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Add some spacing between list items */
+}
+
+header nav ul li:last-child {
+    margin-right: 0; /* Remove margin from the last list item */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(240, 234, 234);
+    font-size: 18px;
+}
+
+
+.venues {
+    padding: 20px;
+}
+
+.venue {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.vegetables {
+    text-align: center; /* Center align heading */
+    padding: 20px; /* Add padding for spacing */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.vegetable-container {
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Allow items to wrap to next line */
+    justify-content: center; /* Center items horizontally */
+    background-color: rgb(177, 179, 174);
+}
+
+.vegetable {
+    margin: 10px; /* Add margin for spacing between vegetables */
+    padding: 20px; /* Add padding for styling */
+    border: 1px solid #1d373a; /* Add border for visual separation */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    width: 200px; /* Set fixed width for each vegetable */
+}
+
+.vegetable img {
+    width: 150px; /* Set a fixed width for the images */
+    height: 150px; /* Set a fixed height for the images */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+
+.vegetable h3 {
+    margin-top: 10px;
+}
+
+.vegetable p.price {
+    color: #143d6e; 
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+

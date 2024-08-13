@@ -1,0 +1,80 @@
+@media screen and (max-width: 768px) {
+    .page-title {
+        font-size: 40px;
+        padding: 30px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .text-box {
+        padding: 10px;
+        height: auto;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .grid-item {
+        margin: 10px 0;
+    }
+
+    .image, .text-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.order-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.order-form h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#cart-table th, #cart-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#total-price {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+}

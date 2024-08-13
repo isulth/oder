@@ -1,0 +1,157 @@
+@media screen and (max-width: 768px) {
+    .page-title {
+        font-size: 40px;
+        padding: 30px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .text-box {
+        padding: 10px;
+        height: auto;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .grid-item {
+        margin: 10px 0;
+    }
+
+    .image, .text-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: system-ui;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.page-title {
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url('images/1.jpeg.jpeg'); /* Added quotes around URL */
+    text-align: center;
+    color: rgb(252, 245, 245);
+    padding: 50px;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: fantasy;
+    letter-spacing: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+header:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+header {
+    padding-top: 20px;
+    position: relative;
+    z-index: 1000;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(240, 234, 234);
+    font-size: 18px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.branches {
+    text-align: center;
+}
+
+.branch {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.image,
+.map {
+    flex: 1;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.map {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.map iframe {
+    height: 400px;
+    width: 100%; /* Added width property */
+}
+
+img {
+    max-width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(165, 87, 87);
+    font-style: italic; /* Changed to italic */
+}
+
+table tr:hover {
+    background-color: #f5f5f5;
+}
+
+table td:hover {
+    background-color: #f5f5f5;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tfoot {
+    background-color: #f2f2f2;
+}
